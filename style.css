@@ -1,0 +1,45 @@
+body {
+    background-color: #c6a9a3;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h1, p {
+    color: #c92f2f;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 40px;
+}
+
+del {
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    transform: rotate(10deg);
+    background-color: #e9c0c1;
+}
+
+ins {
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    transform: rotate(-15deg);
+    background-color: #fce38a;
+}
+
+#myVideo {
+    width: 100%;
+}
+    
+@media all and (max-width: 500px) {
+    p {
+        font-size: 20px;
+    }
+}
