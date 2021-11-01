@@ -34,6 +34,46 @@ ins {
     background-color: #fce38a;
 }
 
+    .btn {
+    position: relative;
+    padding: 20px 60px;
+    background-color: bisque;
+    overflow: hidden;
+    transition: 0.3s all;
+}
+
+.btn:hover {
+    background: rgb(238, 168, 38);
+    box-shadow: 0 0 12px rgb(238, 168, 38);
+}
+
+.btn::before {
+    position: absolute;
+    transition: 1s;
+    animation: animate 2s linear infinite;
+}
+
+.btn::after {
+    position: absolute;
+    inset: 4px;
+    background: orangered;
+    transition: 0.4s;
+}
+
+.btn:hover::after {
+    background-color: rgb(238, 168, 38); ;
+}
+
+a {
+    position:relative;
+    z-index: 1;
+    font-size: 2em;
+    color: orangered;
+    text-decoration: none;
+}
+
+
+
 #myVideo {
     width: 100%;
 }
