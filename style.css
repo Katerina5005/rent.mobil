@@ -34,44 +34,64 @@ ins {
     background-color: #fce38a;
 }
 
-    .btn {
+a {
     position: relative;
     padding: 20px 60px;
-    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #182037;
+    text-decoration: none;
     overflow: hidden;
     transition: 0.3s all;
 }
 
-.btn:hover {
-    background: rgb(238, 168, 38);
-    box-shadow: 0 0 12px rgb(238, 168, 38);
+a:hover {
+    background: #00ccff;
+    box-shadow: 0 0 12px #00ccff;
 }
 
-.btn::before {
+a::before {
+    content: " ";
     position: absolute;
-    transition: 1s;
+    width: 40px;
+    height: 400%;
+    background-color: #00ccff;
+    transition: 2s;
     animation: animate 2s linear infinite;
 }
 
-.btn::after {
+a:hover::before {
+    width: 120%;
+}
+
+a::after {
+    content: " ";
     position: absolute;
     inset: 4px;
-    background: orangered;
-    transition: 0.4s;
+    background: #182037;
+    transition: 0.5s;
 }
 
-.btn:hover::after {
-    background-color: rgb(238, 168, 38); ;
+a:hover::after {
+    background-color: #00ccff ;
 }
 
-a {
+a span {
     position:relative;
     z-index: 1;
     font-size: 2em;
-    color: orangered;
-    text-decoration: none;
+    color: #fff;
 }
 
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 
 #myVideo {
